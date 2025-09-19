@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    header, footer {
+        padding: 0.5em 0;
+    }
+    .welcome, .bio, .projects-list, .gallery, .contact-form {
+        padding: 1em;
+    }
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+}

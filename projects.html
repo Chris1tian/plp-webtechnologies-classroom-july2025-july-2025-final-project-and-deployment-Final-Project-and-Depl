@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Safari Kenya Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book Your Kenyan Adventure</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Destinations</a></li>
+                <li><a href="projects.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Safari or Holiday</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select...</option>
+                    <option value="maasai-mara">Maasai Mara</option>
+                    <option value="diani-beach">Diani Beach</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="mount-kenya">Mount Kenya</option>
+                </select>
+                <label for="dates">Travel Dates:</label>
+                <input type="text" id="dates" name="dates" placeholder="e.g. 12-19 Dec 2025" required>
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="booking-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Safari Kenya Travel Agency | Explore Kenya, Love Kenya</p>
+    </footer>
+</body>
+</html>

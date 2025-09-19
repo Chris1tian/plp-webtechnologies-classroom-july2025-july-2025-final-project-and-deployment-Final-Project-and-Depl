@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe082 0%, #fffde7 100%);
+    color: #222;
+}
+header, footer {
+    background: linear-gradient(90deg, #388e3c 60%, #fbc02d 100%);
+    color: #fff;
+    padding: 1.5em 0 1em 0;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+}
+header h1 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.08em;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+}
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+}
+.welcome, .about-agency, .booking-form, .gallery, .contact-form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(56,142,60,0.08);
+    padding: 2em;
+    margin-bottom: 2em;
+    border-left: 8px solid #388e3c;
+}
+.welcome {
+    border-left-color: #fbc02d;
+}
+.gallery {
+    border-left-color: #0288d1;
+}
+.booking-form {
+    border-left-color: #d84315;
+}
+.about-agency {
+    border-left-color: #388e3c;
+}
+.contact-form {
+    border-left-color: #6a1b9a;
+}
+.images {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(2,136,209,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 3px solid #ffe082;
+}
+.gallery-img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(2,136,209,0.18);
+    border-color: #fbc02d;
+}
+form label {
+    display: block;
+    margin-top: 1em;
+    font-weight: 500;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+form button {
+    margin-top: 1.2em;
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover {
+    background: #fbc02d;
+    color: #222;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+    main {
+        padding: 1em;
+    }
+    .gallery-img {
+        width: 120px;
+        height: 80px;
+    }
+}
